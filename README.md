@@ -21,3 +21,12 @@ to create a test topic
 
 
 Note: To connect to kafka using java code, need to refer /usr/local/etc/kafka/consumer.properties for default group-id
+
+In case of below error,
+{{ java.lang.NoSuchMethodError: org.apache.zookeeper.ZooKeeper.multi(Ljava/lang/Iterable;Lorg/apache/zookeeper/AsyncCallback$MultiCallback;Ljava/lang/Object;)V}}
+
+Env variable $CLASSPATH had contained 
+ * $HIVE_HOME/lib/*:.
+ * $HADOOP_HOME/lib/*:.
+
+Kafka loaded libraries  from these paths. After remove these classpaths kafka launch well.
