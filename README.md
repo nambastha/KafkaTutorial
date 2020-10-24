@@ -20,4 +20,4 @@ to create a test topic
 
 
 
-Note: To connect to kafka using java, need to refer /usr/local/etc/kafka/consumer.properties for default group-id
+Note: To connect to kafka using java code, need to refer /usr/local/etc/kafka/consumer.properties for default group-id
